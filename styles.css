@@ -1,0 +1,125 @@
+.blog_title{
+    font-size: 32px;
+    color: #48BB78;
+
+}
+
+.about_title{
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.about{
+    background-color: #E2E8F0;
+    padding: 5%;
+}
+
+.sidePanels{
+    padding: 5%;
+}
+
+.side_titles{
+    color: #48BB78;
+}
+
+.side_links{
+    color: #4299E1;
+}
+.blog_image{
+    max-width: 300px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', RRoboto,"Helvetica Neue",Arial,"Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+}
+
+.blog_info{
+    color: #718096;
+}
+
+.blog_post{
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(80px, auto);
+    grid-template-areas:
+        "header header header"
+        "content content sidebar "
+        "footer footer footer ";
+}
+
+.header_content {
+    grid-area: header;
+    text-align: center;
+    flex-direction: column;
+    background-color: #63B3ED;
+    color: #ffffff;
+    padding: 2%;
+    h1{
+        font-size: 36px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    p{
+        color: #ffffff;
+    }
+
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    padding-right: 10%;
+    padding-top: 10%;
+    width: 75%;
+
+}
+
+.content {
+    grid-area: content;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFF;
+    padding: 5%;
+    p{
+        color: #ffffff;
+    }
+
+}
+
+.pfp {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
